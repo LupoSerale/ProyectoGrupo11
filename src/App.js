@@ -20,7 +20,6 @@ import RegistrarVenta from './components/RegistrarVenta';
 import EstadoVenta from './components/EstadoVenta';
 function App() {
 
-
   return (
     <Router>
     <div className="App">
@@ -67,12 +66,12 @@ function App() {
           <a className="text-light" href="IniciarSesion">Login</a>
         </div>
       </div>
-    </nav>    
-        <Route path="/iniciarSesion">
-          <IniciarSesion />
-        </Route>
+    </nav>  
         <Switch>
-        <Route path="/registro">
+          <Route path="/iniciarSesion">
+            <IniciarSesion />
+          </Route>
+          <Route path="/registro">
             <Registro />
           </Route>
           <Route path="/listarProducto">
