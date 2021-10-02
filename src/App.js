@@ -15,6 +15,7 @@ import Registro from './components/Registro';
 import ListarProducto from './components/ListarProducto';
 import NuevoProducto from './components/NuevoProducto';
 import EditarProducto from './components/EditarProducto';
+import Home from './components/Home';
 function App() {
 
 
@@ -73,6 +74,9 @@ function App() {
           </Route>
           <Route path="/editarProducto">
             <EditarProducto />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
