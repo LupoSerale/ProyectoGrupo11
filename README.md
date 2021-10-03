@@ -25,5 +25,3 @@ import {
 
 Módulo de ventas a cargo de Arturo Corpas
 Se realizó el modulo de registro con todas las partes que se pidieron, al igual que la parte en que se editar la venta que tiene la lista desplegable para realizar el cambio, pues al principio use Css puro sin la integración al react, tenia un estilo diferente ya que tenia diferentes fondos, pero la idea es que se viera acorde y que tuviera un estilo unificado, así que se escogió el uso del Bootstrap y se lo añadí al react, ya con la implementación creo que podemos ir añadiendo y/o corrigiendo....así mismo añadirle JavaScript para que al momento de colocar el valor total y la cantidad, me genere el valor de la venta total, inconvenientes: la lluvia generó problemas de luz por 2 días al igual que la falla por momentos del servicio de internet.
-
-Comando para ejecutar la APP : npm start
