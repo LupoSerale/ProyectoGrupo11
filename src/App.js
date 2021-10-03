@@ -15,8 +15,10 @@ import Registro from './components/Registro';
 import ListarProducto from './components/ListarProducto';
 import NuevoProducto from './components/NuevoProducto';
 import EditarProducto from './components/EditarProducto';
+import Home from './components/Home';
+import RegistrarVenta from './components/RegistrarVenta';
+import EstadoVenta from './components/EstadoVenta';
 function App() {
-
 
   return (
     <Router>
@@ -37,8 +39,15 @@ function App() {
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="/">Inicio</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Ventas</a>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Ventas
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a className="dropdown-item" href="registrarVenta">Registrar Venta</a></li>
+                <li><a className="dropdown-item" href="estadoVenta">Estado Venta</a></li>
+              </ul>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -57,12 +66,12 @@ function App() {
           <a className="text-light" href="IniciarSesion">Login</a>
         </div>
       </div>
-    </nav>    
-        <Route path="/iniciarSesion">
-          <IniciarSesion />
-        </Route>
+    </nav>  
         <Switch>
-        <Route path="/registro">
+          <Route path="/iniciarSesion">
+            <IniciarSesion />
+          </Route>
+          <Route path="/registro">
             <Registro />
           </Route>
           <Route path="/listarProducto">
@@ -73,6 +82,15 @@ function App() {
           </Route>
           <Route path="/editarProducto">
             <EditarProducto />
+          </Route>
+          <Route path="/registrarVenta">
+            <RegistrarVenta />
+          </Route>
+          <Route path="/estadoVenta">
+            <EstadoVenta />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
