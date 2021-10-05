@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
+import {Modal, ModalBody, ModalHeader, ModalFooter} from 'reactstrap';
 
-
-export default function LitarUsuarios() {
+function LitarUsuarios() {
     const dataUsuarios = [
-        { id: 1, nombre: "Mileidis Ruiz", email: "mileidis@mail.com", role:"Administrador", estado: "Activo" },
-        { id: 2, nombre: "Arturo Corpas", email: "arturo@mail.com", role:"Supervisor", estado: "Inactivo" },
-        { id: 3, nombre: "Ginna Paola Rodriguez", email: "ginna@mail.com", role:"Administrador", estado: "Activo" },
-        { id: 4, nombre: "Mateo Mancera", email: "mateo@mail.com", role:"Vendedor", estado: "Activo" },
-        { id: 5, nombre: "Jhon Calderon", email: "jhonc@mail.com", role:"Vendedor", estado: "Activo" },
+        { id: 1, nombre: "Mileidis Ruiz", email: "milem19@hotmail.com", role:"Administrador", estado: "Activo" },
+        { id: 2, nombre: "Arturo Corpas", email: "corpas196@gmail.com", role:"Supervisor", estado: "Inactivo" },
+        { id: 3, nombre: "Ginna Paola Rodriguez", email: "grodriguez47@gmail.com", role:"Administrador", estado: "Activo" },
+        { id: 4, nombre: "Mateo Mancera", email: "manceramateo@gmail.com", role:"Vendedor", estado: "Activo" },
+        { id: 5, nombre: "Jhon Calderon", email: "jwcalderon2@misena.edu.co", role:"Vendedor", estado: "Activo" },
         
     ];
     
@@ -78,7 +78,7 @@ export default function LitarUsuarios() {
     <button className="btn btn-success" onClick={()=>abrirModalInsertar()}>Agregar Usuario</button>
     <br /><br />
       <table className="table table-bordered" class="table table-striped table-hover">
-        <thead class="table-dark">
+        <thead class="table-light">
           <tr>
             <th>ID</th>
             <th>Nombre</th>
@@ -96,7 +96,7 @@ export default function LitarUsuarios() {
               <td>{elemento.email}</td>
               <td>{elemento.role}</td>
               <td>{elemento.estado}</td>
-              <td><button className="btn btn-primary" onClick={()=>seleccionarUsuario(elemento, 'Editar')}>Editar</button> {"   "} 
+              <td><button className="btn btn-success" onClick={()=>seleccionarUsuario(elemento, 'Editar')}>Editar</button> {"   "} 
               <button className="btn btn-danger" onClick={()=>seleccionarUsuario(elemento, 'Eliminar')}>Eliminar</button></td>
             </tr>
           ))
@@ -164,7 +164,7 @@ export default function LitarUsuarios() {
           </div>
         </ModalBody>
         <ModalFooter>
-          <button className="btn btn-primary" onClick={()=>editar()}>
+          <button className="btn btn-success" onClick={()=>editar()}>
             Actualizar
           </button>
           <button
@@ -255,7 +255,7 @@ export default function LitarUsuarios() {
           </div>
         </ModalBody>
         <ModalFooter>
-          <button className="btn btn-primary"
+          <button className="btn btn-success"
           onClick={()=>insertar()}>
             Insertar
           </button>
@@ -272,3 +272,4 @@ export default function LitarUsuarios() {
     )
     
 }
+export default LitarUsuarios;

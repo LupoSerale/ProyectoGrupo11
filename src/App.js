@@ -61,7 +61,7 @@ function App() {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link">Usuarios</a>
+              <a className="nav-link" href="LitarUsuarios">Usuarios</a>
             </li>
           </ul>
           <a className="text-light" href="IniciarSesion">Login</a>
