@@ -18,6 +18,7 @@ import EditarProducto from './components/EditarProducto';
 import Home from './components/Home';
 import RegistrarVenta from './components/RegistrarVenta';
 import EstadoVenta from './components/EstadoVenta';
+import LitarUsuarios from './components/LitarUsuarios';
 function App() {
 
   return (
@@ -88,6 +89,9 @@ function App() {
           </Route>
           <Route path="/estadoVenta">
             <EstadoVenta />
+          </Route>
+          <Route path="/litarUsuarios">
+            <LitarUsuarios />
           </Route>
           <Route path="/">
             <Home />
