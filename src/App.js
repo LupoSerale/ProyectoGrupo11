@@ -11,7 +11,7 @@ import {
 
 /*importacion componentes*/
 import IniciarSesion from './components/IniciarSesion';
-import Registro from './components/Registro';
+import RegistroDOs from './components/registroDos';
 import ListarProducto from './components/ListarProducto';
 import NuevoProducto from './components/NuevoProducto';
 import EditarProducto from './components/EditarProducto';
@@ -73,7 +73,7 @@ function App() {
             <IniciarSesion />
           </Route>
           <Route path="/registro">
-            <Registro />
+            <RegistroDOs />
           </Route>
           <Route path="/listarProducto">
             <ListarProducto />
