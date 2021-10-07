@@ -27,7 +27,7 @@ function App() {
       <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-success">
       <div className="container-fluid">
         <div className="col-2">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand">
           Proyecto Grupo 11
         </a>
         </div>        
