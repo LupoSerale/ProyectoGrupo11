@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import "./css/estilos.css";
 import {Formulario,ContenedorBoton,Boton,MensajeExito,MensajeError} from "./elementos/elementosformulario"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationTriangle} from '@fortawesome/free-solid-svg-icons'
