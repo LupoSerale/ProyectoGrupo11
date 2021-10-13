@@ -18,7 +18,7 @@ import EditarProducto from './components/EditarProducto';
 import Home from './components/Home';
 import RegistrarVenta from './components/RegistrarVenta';
 import EstadoVenta from './components/EstadoVenta';
-import LitarUsuarios from './components/LitarUsuarios';
+import ListarUsuarios from './components/ListarUsuarios';
 function App() {
 
   return (
@@ -91,7 +91,7 @@ function App() {
             <EstadoVenta />
           </Route>
           <Route path="/litarUsuarios">
-            <LitarUsuarios />
+            <ListarUsuarios />
           </Route>
           <Route path="/">
             <Home />
