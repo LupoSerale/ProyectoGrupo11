@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap';
 
-function LitarUsuarios() {
+function ListarUsuarios() {
   const dataUsuarios = [
-    { id: 1, nombre: "Mileidis Ruiz", email: "milem19@hotmail.com", role: "Administrador", estado: "Activo" },
-    { id: 2, nombre: "Arturo Corpas", email: "corpas196@gmail.com", role: "Supervisor", estado: "Inactivo" },
-    { id: 3, nombre: "Ginna Paola Rodriguez", email: "grodriguez47@gmail.com", role: "Administrador", estado: "Activo" },
-    { id: 4, nombre: "Mateo Mancera", email: "manceramateo@gmail.com", role: "Vendedor", estado: "Activo" },
-    { id: 5, nombre: "Jhon Calderon", email: "jwcalderon2@misena.edu.co", role: "Vendedor", estado: "Activo" },
+    { id: 1, nombre: "Mileidis Ruiz", email: "milem19@hotmail.com", rol: "Administrador", estado: "Autorizado" },
+    { id: 2, nombre: "Arturo Corpas", email: "corpas196@gmail.com", rol: "Vendedor", estado: "No Autorizado" },
+    { id: 3, nombre: "Ginna Paola Rodriguez", email: "grodriguez47@gmail.com", rol: "Administrador", estado: "Autorizado" },
+    { id: 4, nombre: "Mateo Mancera", email: "manceramateo@gmail.com", rol: "Vendedor", estado: "Pendiente" },
+    { id: 5, nombre: "Jhon Calderon", email: "jwcalderon2@misena.edu.co", rol: "Vendedor", estado: "Autorizado" },
   ];
 
   const [data, setData] = useState(dataUsuarios);
@@ -19,7 +19,7 @@ function LitarUsuarios() {
     id: '',
     nombre: '',
     email: '',
-    role: '',
+    rol: '',
     estado: ''
   });
   const seleccionarUsuario = (elemento, caso) => {
@@ -38,7 +38,7 @@ function LitarUsuarios() {
     dataNueva.map(usuario => {
       if (usuario.id === usuarioSeleccionado.id) {
         usuario.email = usuarioSeleccionado.email;
-        usuario.role = usuarioSeleccionado.role;
+        usuario.rol = usuarioSeleccionado.rol;
         usuario.estado = usuarioSeleccionado.estado;
         usuario.nombre = usuarioSeleccionado.nombre;
 
@@ -80,7 +80,7 @@ function LitarUsuarios() {
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Email</th>
-                    <th>Role</th>
+                    <th>Rol</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                   </tr>
@@ -91,7 +91,7 @@ function LitarUsuarios() {
                       <td>{elemento.id}</td>
                       <td>{elemento.nombre}</td>
                       <td>{elemento.email}</td>
-                      <td>{elemento.role}</td>
+                      <td>{elemento.rol}</td>
                       <td>{elemento.estado}</td>
                       <td><button className="btn btn-success" onClick={() => seleccionarUsuario(elemento, 'Editar')}>Editar</button> {"   "}
                         <button className="btn btn-danger" onClick={() => seleccionarUsuario(elemento, 'Eliminar')}>Eliminar</button></td>
@@ -135,12 +135,12 @@ function LitarUsuarios() {
                       onChange={handleChange}
                     />
                     <br />
-                    <label>Role</label>
+                    <label>Rol</label>
                     <input
                       className="form-control"
                       type="text"
-                      name="role"
-                      value={usuarioSeleccionado && usuarioSeleccionado.role}
+                      name="rol"
+                      value={usuarioSeleccionado && usuarioSeleccionado.rol}
                       onChange={handleChange}
                     />
                     <br />
@@ -218,12 +218,12 @@ function LitarUsuarios() {
                       onChange={handleChange}
                     />
                     <br />
-                    <label>Role</label>
+                    <label>Rol</label>
                     <input
                       className="form-control"
                       type="text"
-                      name="role"
-                      value={usuarioSeleccionado ? usuarioSeleccionado.role : ''}
+                      name="rol"
+                      value={usuarioSeleccionado ? usuarioSeleccionado.rol : ''}
                       onChange={handleChange}
                     />
                     <br />
@@ -258,4 +258,4 @@ function LitarUsuarios() {
     </>
   )
 }
-export default LitarUsuarios;
+export default ListarUsuarios;

@@ -61,7 +61,7 @@ function App() {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="LitarUsuarios">Usuarios</a>
+              <a className="nav-link" href="ListarUsuarios">Usuarios</a>
             </li>
           </ul>
           <a className="text-light" href="IniciarSesion">Login</a>
@@ -90,7 +90,7 @@ function App() {
           <Route path="/estadoVenta">
             <EstadoVenta />
           </Route>
-          <Route path="/litarUsuarios">
+          <Route path="/listarUsuarios">
             <ListarUsuarios />
           </Route>
           <Route path="/">
