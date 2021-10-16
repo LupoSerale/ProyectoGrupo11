@@ -1,4 +1,4 @@
-Grupo 11
+Frontend Grupo 11
 
 Integrantes:
 Brian Mateo Mancera Martínez 
