@@ -150,7 +150,7 @@ function Producto() {
                           className="form-control"
                           type="text"
                           name="valorUnitario"
-                          value={productoSeleccionado && productoSeleccionado.valorUnitario}
+                          value={productoSeleccionado && productoSeleccionado.valor}
                           onChange={handleChange} />
                         <br />
                         <label>Estado</label>

@@ -1,5 +1,5 @@
 {
-  "name": "register-login",
+  "name": "frontend_grupo_11",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "reactstrap": "^8.10.0",
+    "styled-components": "^5.3.1",
     "sweetalert": "^2.1.2",
     "web-vitals": "^1.1.2"
   },
